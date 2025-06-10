@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 1280px;
+  background-image: url("wallpaper.jpg");
+  background-position: center center;
+  overflow: hidden;
+}
+.paper {
+  background-image: url("background.jpg");
+  background-size: 800px;
+  background-position: center center;
+  padding: 20px 100px;
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  position: absolute;
+
+  border: 2px solid rgb(71, 132, 237);
+  border-radius: 2%;
+}
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+}
+.paper.image {
+  padding: 20px;
+  border-radius: 2%;
+  text-align: center;
+
+}
+.paper.image p {
+  font-size: 30px;
+}
+img {
+  max-height: 200px;
+  width: 100%;
+  user-select: none;
+}
+.paper.heart::after {
+  content: "";
+  background-image: url('ultima.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 170px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.paper.red {
+/*   filter: hue-rotate(90deg); */
+}
+.paper:nth-of-type(3n) {
+  background-position: left top;
+}
+.paper:nth-of-type(3n) {
+/*   filter: hue-rotate(200deg); */
+}
+p {
+  font-family: 'Zeyada';
+  font-size: 50px;
+  color: rgb(217, 217, 227);
+  opacity: 0.75;
+  user-select: none;
+  
+}
